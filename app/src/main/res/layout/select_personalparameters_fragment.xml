@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical"
+    android:padding="30dp"
+
+    android:gravity="center|center_horizontal">
+
+    <TextView
+        android:id="@+id/choosePersonalParametersTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введите персональные параметры"
+        android:textAlignment="center"
+        android:textColor="@color/mainTextColor"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userWeightInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        app:hintTextColor="@color/darkAccentColor"
+        android:hint="Ваш вес,кг"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxStrokeColor="@color/darkAccentColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userWeightEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainTextColor"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userHeightInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/darkAccentColor"
+        android:hint="Ваш рост,см"
+        app:boxStrokeColor="@color/darkAccentColor"
+        android:layout_marginVertical="5dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userHeightEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainTextColor"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userTargetWeightInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:hint="Желаемый вес,кг"
+        app:hintTextColor="@color/darkAccentColor"
+        app:boxStrokeColor="@color/darkAccentColor"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userTargetWeightEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:textColor="@color/mainTextColor"
+            android:textSize="20sp">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/personalParametersTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultStartTipText"
+        android:textAlignment="center"
+        android:textColor="@color/lightGrey"
+        android:textSize="16sp">
+
+    </TextView>
+    <Button
+        android:layout_marginVertical="20dp"
+        android:text="Далее"
+        android:id="@+id/futherPersonalParameters"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:textColor="@color/mainTextColor"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/accentColor"
+        android:layout_height="wrap_content">
+
+    </Button>
+</LinearLayout>

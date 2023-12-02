@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#faf1f0</color>
+    <color name="accentColor">#ffdad9</color>
+    <color name="mainElementsColor">#ffe9e9</color>
+    <color name="secondaryAccentColor">#e28090</color>
+    <color name="darkElementColor">#edcece</color>
+    <color name="blueAccentColor">#c2e7ff</color>
+    <color name="mainBlueColor">#dbefff</color>
+    <color name="mainYellowColor">#ffffe0</color>
+    <color name="waterColor">#0f5e9c</color>
+    <color name="darkGreen">#1B5E20</color>
+    <color name="mainTextColor">#5a3938</color>
+    <color name="darkAccentColor">#7d222f</color>
+    <color name="elementColor">#fff0ef</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGrey">#b3b3b3</color>
+    <color name="veryLightGrey">#BDBDBD</color>
+    <color name="purple">#BC9FFF</color>
+    <color name="grey">#5F5F5F</color>
+    <color name="darkPurple">#a7a0c9</color>
+    <color name="lightBlue">#bde2fe</color>
+    <color name="coralRed">#c05d5d</color>
+</resources>

@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KFit" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">
+            @android:color/transparent
+        </item>
+        <item name="colorPrimary">@color/secondaryAccentColor
+        </item>
+         <item name="colorSurface">@color/accentColor</item>
+        <item name="colorOnSurfaceVariant">@color/secondaryAccentColor</item>
+    </style>
+
+    <style name="Theme.KFit" parent="Base.Theme.KFit" />
+    <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorPrimary">@color/secondaryAccentColor</item>
+        <item name="colorSurfaceVariant">@color/accentColor</item>
+    </style>
+
+    <style name="CustomSpinnerDatePicker" >
+        <item name="android:textColorPrimary">@color/mainTextColor</item>
+        <item name="colorControlNormal">@color/darkAccentColor</item>
+    </style>
+</resources>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/userInfoCard"
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/mainElementsColor"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Графова Ксения"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="kseniiagrafova@mail.ru"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/userAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Возраст: 19 лет"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="16dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                style="?attr/materialCardViewOutlinedStyle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/darkGreen"
+                    android:src="@drawable/account_backgr">
+
+                </ImageView>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/personalInfoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ"
+        android:textColor="@color/mainTextColor"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userInfoCard">
+
+    </TextView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/personalInfoCard"
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/mainElementsColor"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/personalInfoTv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Цель:"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView android:text="  " />
+
+                <TextView
+                    android:id="@+id/targerInfoTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Сбросить вес"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18dp"></TextView>
+
+                <ImageButton
+                    app:tint="@color/mainTextColor"
+                    android:id="@+id/changeTargerInfoAccount"
+                    android:backgroundTint="@color/mainElementsColor"
+                    android:src="@drawable/ic_arrow_right_24dp"></ImageButton>
+            </GridLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetEnd="16dp"
+                app:dividerColor="@color/mainTextColor"
+                app:dividerInsetStart="16dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Вес:"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView android:text="    " />
+
+                <TextView
+                    android:id="@+id/weightInfoTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:textColor="@color/mainTextColor"
+                    android:layout_gravity="center"
+                    android:text="68 кг"
+                    android:textSize="18dp"></TextView>
+
+                <ImageButton
+                    app:tint="@color/mainTextColor"
+                    android:id="@+id/changeWeightInfoAccount"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:backgroundTint="@color/mainElementsColor"
+                    android:src="@drawable/ic_arrow_right_24dp"></ImageButton>
+            </GridLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetEnd="16dp"
+                app:dividerInsetStart="16dp"
+                app:dividerColor="@color/mainTextColor"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Рост:"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView android:text="  " />
+
+                <TextView
+                    android:id="@+id/heightInfoTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:textColor="@color/mainTextColor"
+                    android:text="170 см"
+                    android:textSize="18dp"></TextView>
+
+                <ImageButton
+                    app:tint="@color/mainTextColor"
+                    android:id="@+id/changeHeightInfoAccount"
+                    android:backgroundTint="@color/mainElementsColor"
+                    android:src="@drawable/ic_arrow_right_24dp"></ImageButton>
+            </GridLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/settingsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="НАСТРОЙКИ"
+        android:textColor="@color/mainTextColor"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personalInfoCard">
+
+    </TextView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/notificationCard"
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/mainElementsColor"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingsTv">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/mainTextColor"
+                android:text="Уведомления"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <com.google.android.material.materialswitch.MaterialSwitch
+                style="@style/Widget.App.Switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:thumbTint="@color/mainTextColor"
+                android:layout_column="3"
+                app:trackDecorationTint="@color/mainTextColor"
+                >
+
+            </com.google.android.material.materialswitch.MaterialSwitch>
+        </GridLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:id="@+id/exitFromAccountBtn"
+        android:layout_marginHorizontal="30dp"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/baseline_exit_to_app_24"
+        android:layout_marginVertical="30dp"
+        app:elevation="100dp"
+        app:iconSize="30dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/accentColor"
+        app:iconTint="@color/mainTextColor"
+        android:text="Выйти"
+        android:textColor="@color/mainTextColor"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notificationCard">
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

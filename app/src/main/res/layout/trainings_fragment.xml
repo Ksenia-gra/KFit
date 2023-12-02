@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Дневная активность"
+        android:textAllCaps="true"
+        android:textColor="@color/mainTextColor"
+        android:textSize="18dp"
+        android:textStyle="bold"></TextView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/personalInfoCard"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:strokeColor="@color/waterColor">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Подвижность"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/userBurnedCalories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/mainTextColor">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/userBurnedCaloriesTarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="/350 ккал"
+                        android:textAlignment="center"
+                        android:textColor="@color/mainTextColor">
+
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressCaloriesBurnedPerDay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:progress="20"
+                app:indicatorColor="@color/waterColor"
+                app:indicatorSize="90dp"
+                app:trackColor="@color/blueAccentColor"
+                app:trackCornerRadius="20dp"
+                app:trackThickness="15dp">
+
+            </com.google.android.material.progressindicator.CircularProgressIndicator>
+        </GridLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="Тренировки"
+            android:textAllCaps="true"
+            android:textColor="@color/mainTextColor"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+    </GridLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/single_row_trainings_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:deselection="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:longPress="false"
+        app:multiSelection="false">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trainings_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:deselection="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:longPress="false"
+        app:multiSelection="false">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/accentColor"
+        android:text="Отметить день выполненным"
+        android:textColor="@color/mainTextColor">
+
+    </Button>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

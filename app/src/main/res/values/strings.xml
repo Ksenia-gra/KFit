@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KFit</string>
+    <string name="entry_with_google">Войти с Google</string>
+    <string name="entry_with_apple">Войти с Apple</string>
+    <string name="genderTipText">Пол влияет на скорость метаболизма. Вот почему эта информация нужна для расчета суточой нормы</string>
+    <string name="defaultStartTipText">Мы используем эти сведения для расчетов и предоставления вам персональных рекомендаций</string>
+    <string name="gender_start_question">Для человека какого пола следует рассчитывать рекомендации?</string>
+    <string name="nutritionPageName">Питание</string>
+    <string name="progressPageName">Прогресс</string>
+    <string name="trainingsPageName">Тренировки</string>
+    <string name="clientId">529744478341-he03ioiq4dabfv5orh6dekvjel5q7smt.apps.googleusercontent.com</string>
+</resources>

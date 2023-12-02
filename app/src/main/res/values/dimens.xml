@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="authButtonTextSize">17sp</dimen>
+    <dimen name="authButtonHorizontalPadding">18dp</dimen>
+    <dimen name="iconButtonSize">24dp</dimen>
+    <dimen name="buttonCornerRadius">20dp</dimen>
+</resources>

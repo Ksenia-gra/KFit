@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    android:background="@color/mainColor"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/selectDateOfBirthTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="Укажите свою дату рождения"
+        android:textAlignment="center"
+        android:textColor="@color/mainTextColor"
+        android:textSize="24dp"
+        ></TextView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/dateOfBirthCard"
+        style="?attr/materialCardViewOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:backgroundTint="@color/elementColor"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:strokeColor="@color/accentColor">
+
+        <DatePicker
+            android:id="@+id/dateOfBirthPicker"
+            android:calendarTextColor="@color/mainTextColor"
+            android:layout_width="match_parent"
+            android:theme="@style/CustomSpinnerDatePicker"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner">
+        </DatePicker>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/dateOfBirthTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="@string/defaultStartTipText"
+        android:textAlignment="center"
+        android:textColor="@color/lightGrey"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateOfBirthCard">
+
+    </TextView>
+    <Button
+        android:layout_marginVertical="20dp"
+        android:text="Далее"
+        android:id="@+id/futherDate"
+        android:textSize="18sp"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:textColor="@color/mainTextColor"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/accentColor"
+        android:layout_height="wrap_content">
+
+    </Button>
+</LinearLayout>
